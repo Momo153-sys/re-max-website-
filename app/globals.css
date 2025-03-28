@@ -1,0 +1,14 @@
+@import "tailwindcss";
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+nav{
+  border-top: 3.5px solid red;
+  position: fixed;
+}
+
+ div a{
+  text-align: center;
+ }
