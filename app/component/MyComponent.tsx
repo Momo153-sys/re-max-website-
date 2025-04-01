@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 const MyComponent = () => {
   useEffect(() => {
       // Import Bootstrap's JavaScript
-      import('bootstrap/dist/js/bootstrap.min.js');
+      require('bootstrap/dist/js/bootstrap.min.js');
   }, []);
   return (
     <div style={{display: 'none'}}>
