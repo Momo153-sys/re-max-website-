@@ -3,19 +3,29 @@ import HeaderComponent from '../component/headerComponent';
 import styles from "../mainPage.module.css";
 import FooterComponent from '../component/footerComponent';
 const page = async () => {
-    let countrySelect = [];
-    let selectedCountry;
+    interface CountryInfo {
+    countryName:string,
+    countryFlag: string,
+    countryCode: string
+  }
+  interface ApiResponse{
+    name: {
+      common:string,
+    },
+    idd:{
+      root: string,
+      suffixes: string,
+    }
+  }
+    let countrySelect: CountryInfo[] = [];
     try{
         const response = await fetch('https://restcountries.com/v3.1/all');
         const countries = await response.json();
-        countries.sort((a, b) => a.name.common.localeCompare(b.name.common)); // Sort alphabetically
-        countries.forEach(country => {
-            countrySelect.push({
+        countries.sort((a: ApiResponse, b: ApiResponse) => a.name.common.localeCompare(b.name.common)); // Sort alphabetically
+            countrySelect = countries.map( (country:ApiResponse) => ({
                 countryName: country.name.common,
-                countryFlag: country.flags.png,
                 countryCode: `${country.idd.root}${country.idd.suffixes}`
-            });
-        });
+            }));
 
     }catch(error){
         console.error('Error fetching countries:', error);
