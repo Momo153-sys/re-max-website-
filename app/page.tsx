@@ -1,7 +1,6 @@
 import React from 'react';
 import "./globals.css";
 import styles from './mainPage.module.css';
-import Image from 'next/image';
 import FooterComponent from './component/footerComponent';
 import HeaderComponent from './component/headerComponent';
 
