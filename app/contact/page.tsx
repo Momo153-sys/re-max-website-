@@ -2,7 +2,6 @@ import React from 'react'
 import HeaderComponent from '../component/headerComponent';
 import styles from "../mainPage.module.css";
 import FooterComponent from '../component/footerComponent';
-import { count } from 'console';
 const page = async () => {
     let countrySelect = [];
     let selectedCountry;
