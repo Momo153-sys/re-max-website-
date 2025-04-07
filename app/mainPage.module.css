@@ -55,8 +55,8 @@
 
 .searchContainer{
   background : rgba(0, 0, 0, 0.6);;
-  width: calc(100% -  120px);
-  height: 150px;
+  width: 80%;
+  height: 40%;
   padding: 2%;
 
  }
@@ -72,9 +72,38 @@
 }
 
 .filterContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ }
+
+ @media (max-width: 710px) {
+  .filterContainer{
+    display: flex;
+    flex-direction: column;
+   }
+   .carousel{
+    height: fit-content;
+   }
+   .offersContainer{
+    flex-direction: column !important;
+    align-items: center;
+   }
+   .serviceOffer{
+    width: 80% !important;
+   }
+   
+ }
+
+ @media (max-width: 800px){
+  .bottomLinks{
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .LinkGroup{
+    width: 80% !important;
+  }
  }
 
 .grids{
@@ -117,7 +146,7 @@
 
 .serviceOffer{
   box-sizing: border-box;
-  width: 25%;
+  width: 30%;
   height: 120px;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
@@ -135,6 +164,7 @@
   color: black;
   margin: 2%;
   text-transform: uppercase;
+  padding: 3%;
 }
 
 .serviceOffer:hover {
@@ -148,6 +178,7 @@
 
 .offersContainer{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
