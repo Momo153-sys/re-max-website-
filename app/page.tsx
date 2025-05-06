@@ -3,11 +3,11 @@ import "./globals.css";
 import styles from './mainPage.module.css';
 import FooterComponent from './component/footerComponent';
 import HeaderComponent from './component/headerComponent';
-const neighborhoods: String[] = [
+const neighborhoods: string[] = [
   "Alenquer", "Amadora", "Arruda dos Vinhos","Azambuja","Cadaval","Cascais","Lisbon","Loures","Lourinhã","Mafra",
   "Odivelas","Oeiras","Sintra","Sobral de Monte Agraço","Torres Vedras","Vila Franca de Xira"
 ];
-const prices: String[] = [
+const prices: string[] = [
   "100,000", "200,000","300,000", "400,000","500,000","600,000","750,000","1,000,000"
 ];
 const page = () => {
