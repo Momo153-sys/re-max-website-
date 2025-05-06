@@ -3,11 +3,11 @@ import styles from '../mainPage.module.css';
 import Link from 'next/link';
 const headerComponent = () => {
   return (
-    <nav className="navbar bg-body-tertiary sticky-top">
+    <nav className="navbar  sticky-top" style={{backgroundColor: '#1a3668'}}>
 		<div className="container-fluid">
-			<div>
+			<div className='logo' style={{width: '20%'}}>
         <Link href ="/" className="navbar-brand">
-        <img src="/images/logo-remax.png" alt="Logo" className="d-inline-block align-text-top" />
+        <img src="/images/logo-remax-official.png" alt="Logo" className="d-inline-block align-text-top" />
         </Link>
         
   
@@ -25,9 +25,9 @@ const headerComponent = () => {
 	<button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-	<div className="offcanvas offcanvas-start" tabIndex= {-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+	<div className="offcanvas offcanvas-start" tabIndex= {-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style={{backgroundColor: '#1a3668'}}>
       <div className="offcanvas-header">
-      <img src="/images/logo-remax.png" alt="Logo" className="d-inline-block align-text-top" />
+      <img src="/images/logo-remax-official.png" alt="Logo" className="d-inline-block align-text-top" style={{width: '50%'}} />
         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div className={`offcanvas-body ${styles.offCanvaBody}`} style={{textAlign: 'center', margin: '1% 1% 1% 1%'}}>
