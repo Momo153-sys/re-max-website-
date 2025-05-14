@@ -127,6 +127,14 @@
    .formSelect{
     margin-top: 2px !important;
    }
+
+   .recentlyAddedHomes{
+    flex-direction: column;
+   }
+
+   .recentlyAddedHomes .homeCard{
+    width: 90%; 
+   }
  }
 
  @media (max-width: 800px){
@@ -514,7 +522,7 @@ text-transform: uppercase;
   overflow-x: auto;
    padding: 2%;
   margin: 2%;
-  flex-wrap: nowrap;
+  
 }
 
 .homesGrid{
