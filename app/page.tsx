@@ -20,7 +20,7 @@ const page = () => {
     rel="preload"
     as="image"
     href="/images/avif/carousel-family.avif"
-    type="images/avif"
+    type="image/avif"
   />
 <HeaderComponent />
 <div className={styles.carousel}>
