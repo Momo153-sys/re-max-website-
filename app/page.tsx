@@ -19,8 +19,8 @@ const page = () => {
   <link
     rel="preload"
     as="image"
-    href="https://cdn.example.com/images/background.webp"
-    type="image/webp"
+    href="/images/webp/carousel-family.webp"
+    type="images/webp"
   />
 <HeaderComponent />
 <div className={styles.carousel}>
