@@ -1,0 +1,158 @@
+.houseInfo{
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
+.middlePageLinksContainer{
+    background-color: white;
+    color: rgb(26, 54, 104);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    margin-top: 3%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: rgba(26, 54, 104, 0.1) 0px 3px 6px 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.middlePageLinks{
+    text-decoration: none;
+    text-transform: uppercase !important;
+    letter-spacing: 1px;
+    font-size: 18px;
+    
+}
+.middlePageLinks:hover{
+    cursor: pointer;
+}
+
+.housePhotosDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.houseDescriptionContainer{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+.infoList {
+    margin: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    width: 100%; 
+  }
+  
+  .infoList.item {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  
+  .infoList .dt {
+    font-weight: bold;
+    margin-right: 8px;
+    min-width: 80px; /* optional: ensures alignment */
+  }
+  
+  .infoList .dd {
+    margin: 0;
+  }
+
+  .item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+  }
+
+
+@media (max-width:990px){
+    .houseInfo{
+        flex-direction: column;
+    }
+    .middlePageLinksContainer{
+        display: none;
+    }
+}
+
+
+.formColumns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formColumn {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fullHeight {
+    height: 100%;
+  }
+  
+  .formFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    max-width: 70%;
+  }
+  
+  .submitButton {
+    padding: 0.5rem 1.2rem;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .formControl {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: hsla(0, 0%, 94%, .5);
+    border: 1px solid rgba(58, 70, 71, .15);
+  }
+
+  .houseContactFormContainer{
+    margin : 0 auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
