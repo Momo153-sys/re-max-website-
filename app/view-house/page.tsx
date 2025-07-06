@@ -353,7 +353,7 @@ content = {
                     
                     </div>
                 </div>
-                <div className={styles.houseContactFormContainer}>
+                <div className={styles.houseContactFormContainer} id="contact">
                 <h3 className="text-center" id="more-information">
                                 Contact Form
                                 </h3>
