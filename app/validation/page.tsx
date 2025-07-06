@@ -97,7 +97,7 @@ const page = () => {
         Your RE/MAX agent is driven as an independent entrepreneur and will create a customized sales plan together with you. RE/MAX agents have local knowledge of the housing market and are experienced in guiding the first step of the sales process. They take the time for you and are available 24/7. If the agent visits for a free valuation, you can also immediately obtain information and ask questions about selling your house with RE/MAX.
         </p>
         <p className="card-text">
-            <a href=""> 
+            <a href="/contact"> 
             <button className='btn btn-danger'>Contact Us</button>
             </a>
         </p>
